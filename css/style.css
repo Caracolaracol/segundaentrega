@@ -173,6 +173,7 @@ ion-icon {
 
 li {
     list-style: none;
+    
 }
 
 .botones-costado {
@@ -192,6 +193,7 @@ li {
 
 .block-menu {
     position: relative;
+    
 }
 
 .block-menu ul {
@@ -201,13 +203,18 @@ li {
     right: 5%;
 }
 
+.block-menu a {
+    text-decoration: none;
+    color: black;
+}
+
 .menu {
     padding-left: 0rem;
 }
 
 .block-menu li {
     background-color: rgb(201, 69, 29);
-    width: max-content;
+    width: 26vw;
     padding: 15px 30px;
 }
 
@@ -380,7 +387,7 @@ details {
 /* ------------Pagina Blog------------ */
 
 .titulo-blog {
-    margin: 3vw;
+    margin: 2vw;
 }
 
 .entradas-blog {
@@ -416,8 +423,8 @@ form {
 .sobremi {
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
 .card {
@@ -503,6 +510,21 @@ form {
     h6 {
         font-size: 2.1vw;
     }
+    .blog-margin {
+        margin-top: 4vh;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .sobremi {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    form {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
 }
 
@@ -558,6 +580,25 @@ form {
     .verblog-otienda {
         font-size: 2vw;
     }
+
+    .blog-margin {
+        margin-top: 4vh;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .sobremi {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    form {
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+
+    .block-menu li {
+        width: 48vw;
 }
 
 @media screen and (max-width: 510px) {
@@ -622,6 +663,21 @@ form {
 
     .verblog-otienda {
         font-size: 3.7vw;
+    }
+
+    .blog-margin {
+        margin-top: 4vh;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    .sobremi {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    form {
+        margin-left: 8%;
+        margin-right: 8%;
     }
 
 }
@@ -695,6 +751,23 @@ form {
     }
     .verblog-otienda {
         font-size: 5.7vw;
+    }
+
+    .blog-margin {
+        margin-top: 4vh;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .sobremi {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    form {
+        margin-left: 8%;
+        margin-right: 8%;
+        font-size: 6vw;
     }
 
     
