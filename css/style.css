@@ -462,7 +462,7 @@ form {
     }
 
     .botones-costado-2 {
-        opacity: 80%;
+        opacity: 95%;
         margin-top: 30px;
         margin-right: 40px;
         display: flex;
@@ -544,7 +544,9 @@ form {
     .menu {
         display: none;
     }
-
+    .botones-costado-2 {
+        opacity: 95%;
+    }
     /* tienda y blog del index */
     .tienda-index {
         margin-left: 6vw;
@@ -618,7 +620,7 @@ form {
         display: none;
     }
     .botones-costado-2 {
-        opacity: 80%;
+        opacity: 95%;
         margin-top: 22px;
         margin-right: 20px;
         display: flex;
@@ -699,7 +701,7 @@ form {
         display: none;
     }
     .botones-costado-2 {
-        opacity: 80%;
+        opacity: 95%;
         margin-top: 22px;
         margin-right: 20px;
         display: flex;
