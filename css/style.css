@@ -1,0 +1,936 @@
+/* ----------TODOS LOS HTML-------------- */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(227, 217, 217);
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Palanquin Dark', sans-serif;
+    letter-spacing: 0.1vh;
+    color: rgb(161, 65, 26);
+    font-size: 2.6vw;
+    opacity: 97%;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.29);
+}
+
+h3 {
+    font-family: 'Palanquin Dark', sans-serif;
+    letter-spacing: 0.1vh;
+    color: rgb(161, 65, 26);
+    font-size: 2.6vw;
+    opacity: 97%;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.29);
+}
+
+h4 {
+    font-family: 'Palanquin Dark', sans-serif;
+    color: rgb(28, 9, 4);
+}
+
+h5 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8vw;
+}
+
+h6 {
+    font-family: 'Palanquin Dark', sans-serif;
+    color: rgb(28, 9, 4);
+    font-size: 1.3vw;
+
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3vw;
+}
+
+main a {
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: rgb(201, 69, 29);
+}
+
+main a:hover {
+    color: rgb(48, 27, 40);
+}
+
+ion-icon {
+    color: rgb(201, 69, 29);
+}
+
+.verblog-otienda {
+    font-size: 1.7vw;
+}
+
+/*  --------------GRIDS--------------- */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "header header header"
+                            "main main main"
+                            "footer footer footer"
+}
+
+.grid-header {
+    grid-area: header;
+    grid-template-areas: "logo menu botones";
+}
+
+.grid-main {
+    grid-area: main;
+}
+
+.grid-footer {
+    grid-area: footer;
+}
+
+/* --------- CSS PARA LAS PAGES -------- */
+
+
+.background-pages {
+    background-image: linear-gradient(rgba(0, 0, 0 , 0.5), rgba(0, 0, 0, 0.2)), url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 25vh;
+    background-position-x: top;
+    background-position-y: -230px;
+    opacity: 95%;
+}
+
+/* -------CSS para el Index.html------- */
+
+.background-image {
+    background-image: linear-gradient(rgba(0, 0, 0 , 0.5), rgba(0, 0, 0, 0.2)), url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+    background-position-x: center;
+    opacity: 95%;
+}
+
+
+/* ------------ HEADER --------------- */
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    letter-spacing: 3px;
+}
+
+.flex-logo {
+    display: flex;
+    justify-content: space-between;
+    grid-area: logo;
+}
+
+.flex-logo > h1 {
+    color: rgb(201, 69, 29);
+    font-size: 28px;
+    margin-top: 38px;
+    opacity: 80%;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    grid-area: menu;
+}
+
+.menu > li > a{
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    gap: 50px;
+    color: rgb(201, 69, 29);
+}
+
+.logo {
+    float:left;
+    margin-left: 20px;
+    width: 100px;
+    margin-top: 16px;
+    transition: transform 0.2s;
+}
+
+.logo:hover{
+    transform: rotate(360deg);
+}
+
+li {
+    list-style: none;
+}
+
+.botones-costado {
+    opacity: 80%;
+    margin-top: 26px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    grid-area: botones;
+}
+
+.botones-costado-2 {
+    display: none;
+    
+}
+
+.block-menu {
+    position: relative;
+}
+
+.block-menu ul {
+    margin-top: 20px;
+    position: absolute;
+    text-align: right;
+    right: 5%;
+}
+
+.menu {
+    padding-left: 0rem;
+}
+
+.block-menu li {
+    background-color: rgb(201, 69, 29);
+    width: max-content;
+    padding: 15px 30px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+summary ion-icon {
+    color: rgb(201, 69, 29);
+    font-size: 36px;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+details > summary {
+    list-style: none;
+}
+
+details > summary::marker {
+    display: none;
+}
+
+details {
+    display: none;
+}
+
+.texto-menu {
+    text-align: center;
+}
+
+/* ---------foto destacada-index-------- */
+
+.info-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+.texto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin-right: 2vw;
+}
+
+/* ------------tienda-index----------- */
+
+.tienda-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 4vh;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 2vw;
+}
+
+.boton {
+    background-color: rgb(201, 69, 29);
+    border-color: rgb(201, 69, 29);
+}
+
+.boton:hover {
+    background-color: rgb(139, 51, 40);
+    border-color: rgb(201, 69, 29);
+}
+
+
+/* ----------------BANNER--------------- */
+
+.banner-1 {
+    position: relative;
+    height: 25vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0 , 0.3), rgba(0, 0, 0, 0.1)), url(../images/banner1.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: local;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.banner-2 {
+    position: relative;
+    height: 25vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0 , 0.3), rgba(0, 0, 0, 0.1)), url(../images/banner2.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: local;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    
+}
+
+/* -------entradas blog del Index------ */
+
+.seccion-entradas {
+    margin-top: 4vh;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.titulo-entradas {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.ver-blog > h4 {
+    text-align: end;
+}
+
+.index-blog-imagen {
+    margin-top: 2vh;
+    margin-bottom: 2vw;
+}
+
+.verblog-otienda {
+    text-decoration: none;
+}
+
+/* ------------Footer-Index------------- */
+
+.background-footer {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    height: 120px;
+    opacity: 90%;
+    margin-top: 1rem;
+}
+
+.text-footer{
+    color: azure;
+    margin-top: 6px;
+    text-align: center;
+}
+
+/* ------------Pagina Tienda----------- */
+
+.main-tienda {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-tienda {
+    margin: 2vw;
+}
+
+.productos-tienda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.paginas-tienda {
+    margin: 1vh;
+    text-align: right;
+}
+
+/* ------------Pagina Blog------------ */
+
+.titulo-blog {
+    margin: 3vw;
+}
+
+.entradas-blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-margin {
+    margin-top: 4vh;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.paginas-blog {
+    margin: 1vh;
+    text-align: right;
+}
+
+/* ------------pagina contacto---------- */
+
+form {
+    margin-top: 4vh;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.mensajes-margen {
+    margin-top: 2vw;
+}
+
+/* ------------pagina sobre mi---------- */
+
+.sobremi {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card {
+    background-color: rgb(211, 191, 191);
+}
+
+.colores {
+    background-color: rgb(201, 69, 29);
+}
+
+.imagen-sobremi-1 {
+    max-height: 24vw;
+    margin: 1vw;
+}
+
+
+/* ----------media queries--------- */
+
+@media screen and (max-width: 1024px){
+
+    /* Menu nav */
+    details {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .botones-costado {
+        display: none;
+    }
+
+    .botones-costado-2 {
+        opacity: 80%;
+        margin-top: 30px;
+        margin-right: 40px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        grid-area: botones;
+    }
+
+    /* foto destacada */
+    .info-foto {
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+
+    /* tienda y blog del index */
+    .tienda-index {
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+
+    .seccion-entradas {
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+
+    p {
+        font-size: 1.7vw;
+    }
+
+    main a {
+        font-size: 1.7vw;
+    }
+
+    .verblog-otienda {
+        font-size: 2vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+    h3 {
+        font-size: 4.3vw;
+    }
+    p {
+        font-size: 2.2vw;
+    }
+    h5 {
+        font-size: 2.4vw;
+    }
+    h6 {
+        font-size: 2.1vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    /* Menu nav */
+    details {
+        display: block;
+    }
+    .botones-costado {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+
+    /* tienda y blog del index */
+    .tienda-index {
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+
+    .seccion-entradas {
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+
+    h5 {
+        font-size: 3.5vw;
+    }
+
+    h6 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 2.3vw;
+    }
+
+    main a {
+        font-size: 2.3vw;
+    }
+
+    /* foto destacada */
+    .info-foto { 
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+    }
+    .texto-info {
+        padding: 2%;
+    }
+
+    .verblog-otienda {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    /* Menu nav */
+    details {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .botones-costado {
+        display: none;
+    }
+    .botones-costado-2 {
+        opacity: 80%;
+        margin-top: 22px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        grid-area: botones;
+    }
+    .botones-costado-2> a {
+        display: none;
+    }
+
+    /* tienda y blog del index */
+    .caja-producto {
+        max-width: fit-content;
+    }
+
+    .imagen-producto {
+        max-height: fit-content;
+    }
+
+    h5 {
+        font-size: 3.5vw;
+    }
+
+    h6 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    main a {
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: 0.4vw;
+    }
+    h2 {
+        font-size: 6vw;
+    }
+    h3 {
+        font-size: 6vw;
+    }
+
+    .verblog-otienda {
+        font-size: 3.7vw;
+    }
+
+}
+
+@media screen and (max-width: 333px) {
+    /* Menu nav */
+    details {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .botones-costado {
+        display: none;
+    }
+    .botones-costado-2 {
+        opacity: 80%;
+        margin-top: 22px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        grid-area: botones;
+    }
+    .botones-costado-2> a {
+        display: none;
+    }
+
+    .flex-logo > h1 {
+        font-size: 6vw;
+        margin-top: 45px;
+    }
+
+    /* fotodestacada */
+    .info-foto { 
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+    }
+    .texto-info {
+        padding: 2%;
+    }
+
+    .texto-info p {
+        font-size: 5vw;
+    }
+
+    h5 {
+        font-size: 5.8vw;
+    }
+
+    h6 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 4.5vw;
+    }
+
+    main a {
+        font-size: 4.5vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+    
+    h3 {
+        font-size: 6vw;
+    }
+    .verblog-otienda {
+        font-size: 5.7vw;
+    }
+
+    
+}
+
+
+/*
+@media screen and (max-width: 1024px){
+
+    .productos-tienda {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .caja-producto {
+        max-width: 23vw;
+    }
+
+    .form {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    .texto-sobreimagen {
+        top: 70vh;
+        font-size: 8vw;
+    }
+
+    .productos-tienda {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .caja-producto {
+        max-width: 48vw;
+    }
+
+    .entrada-1, .entrada-2, .entrada-3, .entrada-4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form {
+        width: 55%;
+    }
+
+    label {
+        font-size: 0.7rem;
+        width: 80vw;
+    }
+    input {
+        font-size: 0.7rem;
+        width: 80vw;
+    }
+    select {
+        font-size: 0.7rem;
+        width: 80vw;
+    }
+    textarea {
+        font-size: 0.7rem;
+        width: 80vw;
+    }
+
+    .tienda-index {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
+
+@media screen and (max-width: 520px){
+    details {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .botones-costado {
+        display: none;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
+    h3 {
+        font-size: 6vw;
+    }
+    
+    
+    .entradas-recientes {
+        margin: 4vw;
+        padding: 2vw;
+        flex-direction: column;
+    }
+    
+    .texto-entradas{
+        padding: 5px;
+    }
+    .texto-entradas p {
+        font-size: 4vw;
+        padding: 3vw;
+    }
+    .texto-entradas p a {
+        font-size: 4vw;
+    }
+
+    .productos-tienda {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .caja-producto {
+        max-width: fit-content;
+    }
+
+    .imagen-producto {
+        max-height: fit-content;
+    }
+
+    .titulo-blog >h3 {  
+        font-size: 4vh;
+    }
+
+    .form {
+        width: 45%;
+    }
+
+    .fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: 0.7rem;
+        width: 80vw;
+    }
+    input {
+        font-size: 0.7rem;
+        width: 80vw;
+    }
+    select {
+        font-size: 0.7rem;
+        width: 80vw;
+    }
+    textarea {
+        font-size: 0.7rem;
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 333px){
+    details {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .botones-costado {
+        display: none;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
+    h3 {
+        font-size: 6vw;
+    }
+
+    .flex-logo > h1 {
+        font-size: 5vw;
+        margin-top: 48px;
+    }
+    
+    .botones-costado-2 {
+        opacity: 80%;
+        margin-top: 6px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        grid-area: botones;
+    }
+    .botones-costado-2> a {
+        display: none;
+    }
+
+    /* .texto-sobreimagen {
+        top: 60vh;
+        font-size: 9vw;
+    } 
+    
+
+    .info-foto { 
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+    }
+    .texto-info {
+        padding: 2%;
+    }
+
+    .texto-info p {
+        font-size: 5vw;
+    }
+
+    .entradas-recientes {
+        margin: 10px;
+        padding: 5px;
+    }
+    
+    .texto-entradas{
+        padding: 5px;
+    }
+    .texto-entradas p {
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .productos-tienda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja-producto {
+        max-width: max-content;
+    }
+
+    .imagen-producto {
+        max-height: fit-content;
+    }
+
+}  */
