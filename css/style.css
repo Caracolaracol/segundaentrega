@@ -73,6 +73,10 @@ ion-icon {
     font-size: 1.7vw;
 }
 
+header {
+    z-index: 3;
+}
+
 /*  --------------GRIDS--------------- */
 
 .grid-container {
@@ -85,6 +89,7 @@ ion-icon {
 .grid-header {
     grid-area: header;
     grid-template-areas: "logo menu botones";
+    z-index: 2;
 }
 
 .grid-main {
@@ -173,7 +178,6 @@ ion-icon {
 
 li {
     list-style: none;
-    
 }
 
 .botones-costado {
@@ -193,7 +197,6 @@ li {
 
 .block-menu {
     position: relative;
-    
 }
 
 .block-menu ul {
@@ -242,6 +245,7 @@ details > summary::marker {
 
 details {
     display: none;
+    
 }
 
 .texto-menu {
@@ -423,6 +427,7 @@ form {
 .sobremi {
     display: flex;
     flex-direction: column;
+    z-index: 1;
     margin-left: 12%;
     margin-right: 12%;
 }
@@ -1006,4 +1011,5 @@ form {
         max-height: fit-content;
     }
 
-}  */
+}  
+*/
