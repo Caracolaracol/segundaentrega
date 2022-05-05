@@ -1,0 +1,50 @@
+ /* ------------Pagina Blog------------ */
+
+.blog-margin {
+    margin-left: 20%;
+    margin-right: 20%;
+    main {
+        .titulo-blog {
+            margin: 2vw;
+        }
+        .entradas-blog {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .paginas-blog {
+            margin: 1vh;
+            text-align: right;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blog-margin {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog-margin {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    .blog-margin {
+        margin-top: 4vh;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+
+@media screen and (max-width: 333px) {
+    .blog-margin {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
