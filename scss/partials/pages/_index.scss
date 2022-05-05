@@ -192,6 +192,13 @@
         font-size: 2vw;
     }
 }
+
+@media screen and (max-width: 510px) {
+    .verblog-otienda {
+        font-size: 4vw;
+    }
+}
+
 @media screen and (max-width: 333px) {
     .verblog-otienda {
         font-size: 5.7vw;

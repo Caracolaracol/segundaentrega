@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import "../variables/variables";
+
 body {
     background-color: rgb(227, 217, 217);
     font-size: 20px;
@@ -169,7 +171,7 @@ main {
     a {
         font-size: 1.3vw;
         text-decoration: none;
-        color: rgb(201, 69, 29);
+        color: $color-principal;
         &hover{
             color: rgb(48, 27, 40);
         }
@@ -195,7 +197,7 @@ main {
 }
 
 ion-icon {
-    color: rgb(201, 69, 29);
+    color: $color-principal;
 }
 
 .verblog-otienda {

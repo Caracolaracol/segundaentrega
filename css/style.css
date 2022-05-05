@@ -312,6 +312,10 @@ header {
   .verblog-otienda {
     font-size: 2vw; } }
 
+@media screen and (max-width: 510px) {
+  .verblog-otienda {
+    font-size: 4vw; } }
+
 @media screen and (max-width: 333px) {
   .verblog-otienda {
     font-size: 5.7vw; } }
@@ -637,7 +641,8 @@ li {
     display: none; } }
 
 .block-menu {
-  position: relative; }
+  position: relative;
+  border-radius: 5px; }
   .block-menu ul {
     margin-top: 20px;
     position: absolute;
@@ -649,7 +654,8 @@ li {
   .block-menu li {
     background-color: #c9451d;
     width: 26vw;
-    padding: 15px 30px; }
+    padding: 5px 10px;
+    border-radius: 5px; }
   @media screen and (max-width: 768px) {
     .block-menu li {
       width: 48vw; } }
@@ -692,3 +698,11 @@ details > summary::marker {
 
 .texto-menu {
   text-align: center; }
+
+@media screen and (max-width: 510px) {
+  .texto-menu {
+    font-size: 4vw; } }
+
+@media screen and (max-width: 333px) {
+  .texto-menu {
+    font-size: 6vw; } }
