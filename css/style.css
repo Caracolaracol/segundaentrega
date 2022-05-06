@@ -676,10 +676,12 @@ details > summary {
     cursor: pointer;
     margin-top: 0px;
     margin-right: 20px; }
+  details > summary::marker {
+    display: none; }
 
-details > summary::marker {
-  display: none; }
-
+/* details > summary::marker {
+    display: none;
+} */
 @media screen and (max-width: 1024px) {
   details {
     display: block; } }

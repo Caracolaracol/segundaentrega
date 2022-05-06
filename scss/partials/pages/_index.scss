@@ -1,3 +1,5 @@
+@import "../variables/variables";
+
 .background-image {
     background-image: linear-gradient(rgba(0, 0, 0 , 0.5), rgba(0, 0, 0, 0.2)), url(../images/background.jpg);
     background-repeat: no-repeat;
@@ -139,11 +141,11 @@
 
 
 .boton {
-    background-color: rgb(201, 69, 29);
-    border-color: rgb(201, 69, 29);
+    background-color: $color-principal;
+    border-color: $color-principal;
     &:hover {
-        background-color: rgb(139, 51, 40);
-        border-color: rgb(201, 69, 29);
+        background-color: $color-segundo;
+        border-color: $color-principal;
 
     }
 }
